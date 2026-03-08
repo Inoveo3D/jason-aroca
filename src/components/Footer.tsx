@@ -60,8 +60,12 @@ export default function Footer() {
         </div>
       </div>
 
-      <div className="border-t border-gray-800 text-center py-4 text-xs text-gray-500">
-        © 2025 + élect - Jason Aroca - Tous droits réservés. &nbsp;•&nbsp; Développé par inoveo3D
+      <div className="border-t border-gray-800 py-4 text-xs text-gray-500 flex flex-col sm:flex-row items-center justify-between gap-2 px-4 max-w-6xl mx-auto w-full">
+        <span>© 2025 + élect - Jason Aroca - Tous droits réservés. &nbsp;•&nbsp; Développé par inoveo3D</span>
+        <div className="flex gap-4">
+          <Link href="/mentions-legales" className="hover:text-amber-400 transition-colors">Mentions légales</Link>
+          <Link href="/politique-confidentialite" className="hover:text-amber-400 transition-colors">Politique de confidentialité</Link>
+        </div>
       </div>
     </footer>
   );
