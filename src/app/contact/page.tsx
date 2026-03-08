@@ -62,8 +62,8 @@ const infos = [
   {
     Icon: MailIcon,
     title: "Email",
-    value: "jason.aroca@gmail.com",
-    link: "mailto:jason.aroca@gmail.com",
+    value: "aroca.jason.elect@outlook.fr",
+    link: "mailto:aroca.jason.elect@outlook.fr",
     detail: "Réponse sous 24h garantie",
   },
   {
