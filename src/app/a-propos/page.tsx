@@ -1,0 +1,138 @@
+import Link from "next/link";
+import Image from "next/image";
+import type { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "À propos — + élect | Jason Aroca Électricien Marignane",
+  description: "Découvrez le parcours et les valeurs de Jason Aroca, électricien certifié RGE basé à Marignane (Bouches-du-Rhône).",
+};
+
+const valeurs = [
+  {
+    img: "/images/valeurs/1-fiabilité.webp",
+    title: "Fiabilité",
+    desc: "Respect des délais, devis précis et travail propre. Ce que je promets, je le tiens.",
+  },
+  {
+    img: "/images/valeurs/2-securité.webp",
+    title: "Sécurité",
+    desc: "Chaque installation est réalisée aux normes NF C 15-100 pour votre sécurité totale.",
+  },
+  {
+    img: "/images/valeurs/3-transparence.webp",
+    title: "Transparence",
+    desc: "Aucune mauvaise surprise : je vous explique tout avant de commencer et le devis est gratuit.",
+  },
+  {
+    img: "/images/valeurs/4-satisfaction.webp",
+    title: "Satisfaction client",
+    desc: "Des centaines de chantiers réalisés avec soin. Je ne pars pas tant que vous n'êtes pas satisfait.",
+    imgPos: "object-top",
+  },
+];
+
+export default function AProposPage() {
+  return (
+    <>
+      {/* Hero */}
+      <section className="bg-gray-900 text-white pt-32 pb-20">
+        <div className="max-w-4xl mx-auto px-4 text-center">
+          <span className="text-amber-400 font-semibold text-sm uppercase tracking-widest">
+            À propos
+          </span>
+          <h1 className="text-4xl md:text-5xl font-bold mt-3 mb-4">
+            À Propos de <span className="text-amber-400">+ élect</span>
+          </h1>
+          <p className="text-2xl md:text-3xl font-semibold text-gray-300">
+            Électricien à Marignane
+          </p>
+        </div>
+      </section>
+
+      {/* Présentation */}
+      <section className="py-20 bg-white">
+        <div className="max-w-6xl mx-auto px-4 grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+          <div className="flex items-center justify-center rounded-2xl bg-gray-50 border border-gray-100 shadow-sm min-h-80 p-12">
+            <Image
+              src="/images/logo-transprent.png"
+              alt="Logo + élect"
+              width={200}
+              height={200}
+              className="object-contain"
+            />
+          </div>
+
+          <div>
+            <h2 className="text-3xl font-bold text-gray-900 mb-4">À Propos de + élect</h2>
+            <p className="text-gray-600 leading-relaxed mb-6">
+              + élect est un électricien basé à Marignane, spécialisé dans l'installation électrique,
+              la rénovation, la mise aux normes NF C 15-100 et le dépannage électrique urgent 7j/7.
+              J'interviens auprès des particuliers et des professionnels pour des installations sûres,
+              durables et conformes aux réglementations. Couvert par une assurance décennale, chaque
+              chantier est garanti 10 ans — une protection essentielle pour vous et votre bien.
+            </p>
+
+            <div className="flex flex-wrap gap-3">
+              {["Artisan local Marignane", "Devis gratuit sous 24h", "Urgences 7j/7", "Assurance décennale"].map((badge) => (
+                <span
+                  key={badge}
+                  className="bg-amber-50 border border-amber-200 text-amber-700 text-sm font-medium px-3 py-1 rounded-full"
+                >
+                  {badge}
+                </span>
+              ))}
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Valeurs */}
+      <section className="py-20 bg-gray-50">
+        <div className="max-w-6xl mx-auto px-4">
+          <div className="text-center mb-14">
+            <h2 className="text-3xl font-bold text-gray-900 mb-4">Mes valeurs</h2>
+            <p className="text-gray-500 max-w-lg mx-auto">
+              Ces principes guident chacune de mes interventions, du premier contact jusqu'à la fin du chantier.
+            </p>
+          </div>
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
+            {valeurs.map((v) => (
+              <div key={v.title} className="bg-white rounded-2xl overflow-hidden border border-gray-100 shadow-sm">
+                <div className="relative h-48 w-full">
+                  <Image src={v.img} alt={v.title} fill className={`object-cover ${"imgPos" in v ? v.imgPos : "object-center"}`} />
+                </div>
+                <div className="p-5 text-center">
+                  <h3 className="font-bold text-gray-900 mb-2">{v.title}</h3>
+                  <p className="text-gray-500 text-sm leading-relaxed">{v.desc}</p>
+                </div>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+
+      {/* Parallax CTA */}
+      <section
+        className="relative py-36 bg-fixed bg-cover bg-center"
+        style={{ backgroundImage: "url('/images/prestations/1-installation-electrique.webp')" }}
+      >
+        <div className="absolute inset-0 bg-gray-900/65" />
+        <div className="relative z-10 max-w-3xl mx-auto px-4 text-center text-white">
+          <h2 className="text-3xl md:text-4xl font-bold mb-4">
+            Interventions sur Marignane et alentours
+          </h2>
+          <p className="text-gray-300 mb-8 text-lg">
+            Marignane, Vitrolles, Rognac, Berre, Martigues... Devis gratuit sous 24h.
+          </p>
+          <Link
+            href="/contact"
+            className="inline-block bg-amber-500 hover:bg-amber-400 text-white font-bold text-lg px-8 py-4 rounded-xl transition-all hover:scale-105 shadow"
+          >
+            Demander un devis gratuit
+          </Link>
+        </div>
+      </section>
+    </>
+  );
+}
