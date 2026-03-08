@@ -1,7 +1,34 @@
+import type { Metadata } from "next";
 import Link from "next/link";
 import Image from "next/image";
 import StatsCounter from "@/components/StatsCounter";
 import RatingCounter from "@/components/RatingCounter";
+
+export const metadata: Metadata = {
+  title: "Électricien Marignane — Dépannage & Installation | + élect Jason Aroca",
+  description:
+    "+ élect, votre électricien à Marignane (13700) : dépannage électrique 7j/7, installation, mise aux normes, tableau électrique. Artisan assurance décennale. Devis gratuit sous 24h. Intervient à Vitrolles, Rognac, Martigues, Aix-en-Provence, Marseille et alentours.",
+  keywords: [
+    "électricien Marignane",
+    "dépannage électrique Marignane",
+    "électricien 7j/7 Marignane",
+    "installation électrique Marignane",
+    "tableau électrique Marignane",
+    "électricien urgence Marignane",
+    "devis électricien Marignane",
+    "artisan électricien 13700",
+    "+ élect Marignane",
+    "Jason Aroca électricien",
+    "électricien Vitrolles",
+    "électricien Rognac",
+    "électricien Martigues",
+    "électricien Bouches-du-Rhône",
+  ],
+  openGraph: {
+    title: "Électricien à Marignane — + élect | Jason Aroca",
+    description: "Dépannage électrique urgent, installation et mise aux normes à Marignane. Devis gratuit, 7j/7, assurance décennale.",
+  },
+};
 
 const services = [
   {
@@ -153,7 +180,7 @@ export default function HomePage() {
       {/* ===== À PROPOS (mini) ===== */}
       <section className="py-20 bg-gray-50">
         <div className="max-w-6xl mx-auto px-4 grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
-          <div className="relative aspect-[3/4] max-w-sm mx-auto md:mx-0 rounded-2xl overflow-hidden shadow-lg">
+          <div className="relative w-full max-w-sm mx-auto md:mx-0 h-80 md:h-auto md:aspect-[3/4] rounded-2xl overflow-hidden shadow-lg">
             <Image
               src="/images/jason-aroca.webp"
               alt="Jason Aroca électricien"

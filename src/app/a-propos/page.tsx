@@ -3,8 +3,27 @@ import Image from "next/image";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "À propos — + élect | Jason Aroca Électricien Marignane",
-  description: "Découvrez le parcours et les valeurs de Jason Aroca, électricien certifié RGE basé à Marignane (Bouches-du-Rhône).",
+  title: "À Propos — Jason Aroca Électricien Marignane | Fiabilité & Assurance Décennale",
+  description:
+    "Découvrez + élect : Jason Aroca, électricien artisan à Marignane (13700), spécialisé en installation électrique, dépannage et mise aux normes. Assurance décennale, devis gratuit sous 24h, disponible 7j/7 dans un rayon de 50 km — Vitrolles, Rognac, Martigues, Aix-en-Provence, Marseille.",
+  keywords: [
+    "Jason Aroca électricien",
+    "+ élect Marignane",
+    "artisan électricien Marignane",
+    "électricien assurance décennale Marignane",
+    "électricien fiable Marignane",
+    "électricien 13700",
+    "valeurs électricien Marignane",
+    "électricien disponible 7j/7",
+    "mise aux normes NF C 15-100 Marignane",
+    "dépannage électrique Marignane",
+    "devis gratuit électricien Marignane",
+    "électricien Bouches-du-Rhône",
+  ],
+  openGraph: {
+    title: "À Propos de + élect — Jason Aroca, Électricien à Marignane",
+    description: "Artisan électricien à Marignane depuis plusieurs années. Fiabilité, sécurité, transparence et satisfaction client. Assurance décennale, devis gratuit.",
+  },
 };
 
 const valeurs = [

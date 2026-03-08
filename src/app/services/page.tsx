@@ -4,8 +4,37 @@ import type { Metadata } from "next";
 
 
 export const metadata: Metadata = {
-  title: "Services — + élect | Jason Aroca Électricien Marignane",
-  description: "Dépannage, installation, mise aux normes, domotique. Tous les services électriques pour particuliers et professionnels à Marignane et alentours.",
+  title: "Services Électricien Marignane — Installation, Dépannage, Maintenance | + élect",
+  description:
+    "Tous vos travaux électriques à Marignane et dans un rayon de 50 km : installation électrique, dépannage urgence 7j/7, maintenance préventive, conseils personnalisés. Artisan assurance décennale. Devis gratuit. Vitrolles, Rognac, Martigues, Aix-en-Provence, Marseille, Istres, Salon-de-Provence.",
+  keywords: [
+    "installation électrique Marignane",
+    "dépannage électrique urgence Marignane",
+    "maintenance préventive électrique",
+    "mise aux normes NF C 15-100",
+    "tableau électrique Marignane",
+    "câblage électrique Marignane",
+    "remplacement tableau électrique",
+    "prise interrupteur Marignane",
+    "dépannage court-circuit",
+    "électricien particulier professionnel Marignane",
+    "zone intervention électricien 50km Marignane",
+    "électricien Vitrolles",
+    "électricien Rognac",
+    "électricien Berre-l'Étang",
+    "électricien Martigues",
+    "électricien Châteauneuf-les-Martigues",
+    "électricien Aix-en-Provence",
+    "électricien Marseille",
+    "électricien Istres",
+    "électricien Salon-de-Provence",
+    "électricien Aubagne",
+    "devis gratuit électricien",
+  ],
+  openGraph: {
+    title: "Services Électricien — Installation, Dépannage & Maintenance | + élect Marignane",
+    description: "Installation, dépannage urgence, maintenance et conseils électriques à Marignane et dans un rayon de 50 km. Devis gratuit, assurance décennale.",
+  },
 };
 
 const services = [
@@ -85,7 +114,7 @@ export default function ServicesPage() {
                 className="group bg-gray-800 hover:bg-gray-700 rounded-2xl overflow-hidden transition-all hover:shadow-xl hover:-translate-y-1 flex flex-col"
               >
                 <div className="relative h-48 w-full">
-                  <Image src={s.img} alt={s.title} fill className="object-cover" />
+                  <Image src={s.img} alt={s.title} fill sizes="(max-width: 768px) 100vw, 50vw" className="object-cover" />
                 </div>
                 <div className="p-7 flex flex-col flex-1 gap-4">
                   <h2 className="font-bold text-amber-400 text-lg">{s.title}</h2>
