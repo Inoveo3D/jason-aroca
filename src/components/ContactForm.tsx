@@ -8,11 +8,12 @@ export default function ContactForm() {
       className="space-y-5"
     >
       {/* ── Champs cachés FormSubmit ── */}
-      <input type="hidden" name="_next"     value="https://www.jasonarocaelect.fr/merci" />
-      <input type="hidden" name="_captcha"  value="false" />
-      <input type="hidden" name="_subject"  value="Nouvelle demande via + élect" />
+      <input type="hidden" name="_next"      value="https://www.jasonarocaelect.fr/merci" />
+      <input type="hidden" name="_captcha"   value="false" />
+      <input type="hidden" name="_subject"   value="Nouvelle demande via + élect" />
+      <input type="hidden" name="_template"  value="table" />
       {/* Honeypot anti-spam */}
-      <input type="text"   name="_honey"    style={{ display: "none" }} />
+      <input type="text"   name="_honey"     style={{ display: "none" }} />
 
       {/* Nom */}
       <div>
