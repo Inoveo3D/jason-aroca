@@ -22,7 +22,7 @@ export default function PolitiqueConfidentialitePage() {
             <ul className="space-y-2 text-sm text-gray-600">
               {["Nom et prénom", "Adresse email", "Numéro de téléphone", "Message envoyé par l'utilisateur"].map((item) => (
                 <li key={item} className="flex items-start gap-2">
-                  <span className="text-amber-500 font-bold shrink-0">✓</span>
+                  <span className="text-brand-500 font-bold shrink-0">✓</span>
                   {item}
                 </li>
               ))}
@@ -38,7 +38,7 @@ export default function PolitiqueConfidentialitePage() {
             <ul className="space-y-2 text-sm text-gray-600">
               {["Répondre aux demandes de contact", "Organiser un rendez-vous ou établir un devis"].map((item) => (
                 <li key={item} className="flex items-start gap-2">
-                  <span className="text-amber-500 font-bold shrink-0">✓</span>
+                  <span className="text-brand-500 font-bold shrink-0">✓</span>
                   {item}
                 </li>
               ))}
@@ -72,14 +72,14 @@ export default function PolitiqueConfidentialitePage() {
             </p>
             <ul className="space-y-2 text-sm text-gray-600">
               <li className="flex items-center gap-2">
-                <span className="text-amber-500 font-bold shrink-0">→</span>
-                <a href="mailto:aroca.jason.elect@outlook.fr" className="hover:text-amber-500 transition-colors">
+                <span className="text-brand-500 font-bold shrink-0">→</span>
+                <a href="mailto:aroca.jason.elect@outlook.fr" className="hover:text-brand-500 transition-colors">
                   aroca.jason.elect@outlook.fr
                 </a>
               </li>
               <li className="flex items-center gap-2">
-                <span className="text-amber-500 font-bold shrink-0">→</span>
-                <a href="tel:+33698127982" className="hover:text-amber-500 transition-colors">
+                <span className="text-brand-500 font-bold shrink-0">→</span>
+                <a href="tel:+33698127982" className="hover:text-brand-500 transition-colors">
                   06 98 12 79 82
                 </a>
               </li>

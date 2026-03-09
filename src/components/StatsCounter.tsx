@@ -10,8 +10,7 @@ type Stat = {
 
 const stats: Stat[] = [
   { target: 15, suffix: "+", label: "Années d'expérience" },
-  { target: 500, suffix: "+", label: "Clients satisfaits" },
-  { target: 5, suffix: "j/7", label: "Disponibilité" },
+  { target: 7, suffix: "j/7", label: "Disponibilité" },
 ];
 
 function useCountUp(target: number, duration: number, started: boolean) {
@@ -42,7 +41,7 @@ function StatItem({ stat, started }: { stat: Stat; started: boolean }) {
         {count}
         <span>{stat.suffix}</span>
       </div>
-      <div className="text-amber-900 font-medium mt-1">{stat.label}</div>
+      <div className="text-brand-900 font-medium mt-1">{stat.label}</div>
     </div>
   );
 }
@@ -66,15 +65,15 @@ export default function StatsCounter() {
   }, []);
 
   return (
-    <section className="bg-amber-500 py-12" ref={ref}>
-      <div className="max-w-6xl mx-auto px-4 grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
+    <section className="bg-brand-500 py-12" ref={ref}>
+      <div className="max-w-6xl mx-auto px-4 grid grid-cols-3 gap-8 text-center">
         {stats.map((s) => (
           <StatItem key={s.label} stat={s} started={started} />
         ))}
         {/* Devis gratuit */}
         <div>
           <div className="text-4xl font-extrabold text-white">Devis</div>
-          <div className="text-amber-900 font-medium mt-1">Gratuit</div>
+          <div className="text-brand-900 font-medium mt-1">Gratuit</div>
         </div>
       </div>
     </section>

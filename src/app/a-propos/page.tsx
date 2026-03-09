@@ -3,26 +3,28 @@ import Image from "next/image";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "À Propos — Jason Aroca Électricien Marignane | Fiabilité & Assurance Décennale",
+  title: "À Propos — Jason Aroca Artisan Électricité & Multi-services Marignane | + élect",
   description:
-    "Découvrez + élect : Jason Aroca, électricien artisan à Marignane (13700), spécialisé en installation électrique, dépannage et mise aux normes. Assurance décennale, devis gratuit sous 24h, disponible 5j/7 dans un rayon de 50 km — Vitrolles, Rognac, Martigues, Aix-en-Provence, Marseille.",
+    "Découvrez + élect : Jason Aroca, artisan à Marignane (13700), spécialisé en électricité et multi-services (placo, fenêtres, portails, volets). Assurance décennale, devis gratuit, disponible 7j/7 — Vitrolles, Rognac, Martigues, Aix-en-Provence, Marseille et alentours.",
   keywords: [
-    "Jason Aroca électricien",
+    "Jason Aroca artisan Marignane",
     "+ élect Marignane",
-    "artisan électricien Marignane",
-    "électricien assurance décennale Marignane",
+    "artisan électricité multiservices Marignane",
+    "artisan assurance décennale Marignane",
     "électricien fiable Marignane",
-    "électricien 13700",
-    "valeurs électricien Marignane",
-    "électricien disponible 5j/7",
+    "multi-services Marignane",
+    "pose placo Marignane",
+    "remplacement fenêtre portail volet Marignane",
+    "artisan 13700",
+    "électricien disponible 7j/7",
     "mise aux normes NF C 15-100 Marignane",
     "dépannage électrique Marignane",
-    "devis gratuit électricien Marignane",
+    "devis gratuit artisan Marignane",
     "électricien Bouches-du-Rhône",
   ],
   openGraph: {
-    title: "À Propos de + élect — Jason Aroca, Électricien à Marignane",
-    description: "Artisan électricien à Marignane depuis plusieurs années. Fiabilité, sécurité, transparence et satisfaction client. Assurance décennale, devis gratuit.",
+    title: "À Propos de + élect — Jason Aroca, Artisan Électricité & Multi-services Marignane",
+    description: "Artisan à Marignane spécialisé en électricité et multi-services. Fiabilité, transparence, assurance décennale et devis gratuit.",
   },
 };
 
@@ -56,14 +58,14 @@ export default function AProposPage() {
       {/* Hero */}
       <section className="bg-gray-900 text-white pt-32 pb-20">
         <div className="max-w-4xl mx-auto px-4 text-center">
-          <span className="text-amber-400 font-semibold text-sm uppercase tracking-widest">
+          <span className="text-brand-400 font-semibold text-sm uppercase tracking-widest">
             À propos
           </span>
           <h1 className="text-4xl md:text-5xl font-bold mt-3 mb-4">
-            À Propos de <span className="text-amber-400">+ élect</span>
+            À Propos de <span className="text-brand-400">+ élect</span>
           </h1>
           <p className="text-2xl md:text-3xl font-semibold text-gray-300">
-            Électricien à Marignane
+            Artisan en électricité & multiservices
           </p>
         </div>
       </section>
@@ -84,18 +86,18 @@ export default function AProposPage() {
           <div>
             <h2 className="text-3xl font-bold text-gray-900 mb-4">À Propos de + élect</h2>
             <p className="text-gray-600 leading-relaxed mb-6">
-              + élect est un électricien basé à Marignane, spécialisé dans l'installation électrique,
-              la rénovation, la mise aux normes NF C 15-100 et le dépannage électrique urgent 5j/7.
-              J'interviens auprès des particuliers et des professionnels pour des installations sûres,
-              durables et conformes aux réglementations. Couvert par une assurance décennale, chaque
-              chantier est garanti 10 ans — une protection essentielle pour vous et votre bien.
+              + élect est un artisan basé à Marignane, spécialisé dans l'installation électrique,
+              la rénovation, la mise aux normes NF C 15-100 et le dépannage électrique 7j/7 (urgence uniquement le week-end).
+              Au-delà de l'électricité, j'interviens également sur des travaux multi-services : pose de placo, remplacement de fenêtres,
+              portails, volets et petits travaux de second œuvre — pour un service clé en main.
+              Tous les travaux électriques sont couverts par une assurance décennale.
             </p>
 
             <div className="flex flex-wrap gap-3">
-              {["Artisan local Marignane", "Devis gratuit sous 24h", "Urgences 5j/7", "Assurance décennale"].map((badge) => (
+              {["Artisan local Marignane", "Devis gratuit sous 24h", "Urgences 7j/7", "Assurance décennale"].map((badge) => (
                 <span
                   key={badge}
-                  className="bg-amber-50 border border-amber-200 text-amber-700 text-sm font-medium px-3 py-1 rounded-full"
+                  className="bg-brand-50 border border-brand-200 text-brand-700 text-sm font-medium px-3 py-1 rounded-full"
                 >
                   {badge}
                 </span>
@@ -146,7 +148,7 @@ export default function AProposPage() {
           </p>
           <Link
             href="/contact"
-            className="inline-block bg-amber-500 hover:bg-amber-400 text-white font-bold text-lg px-8 py-4 rounded-xl transition-all hover:scale-105 shadow"
+            className="inline-block bg-brand-500 hover:bg-brand-400 text-white font-bold text-lg px-8 py-4 rounded-xl transition-all hover:scale-105 shadow"
           >
             Demander un devis gratuit
           </Link>

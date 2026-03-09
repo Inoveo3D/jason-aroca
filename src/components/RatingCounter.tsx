@@ -37,7 +37,7 @@ export default function RatingCounter() {
   }, [started]);
 
   return (
-    <div ref={ref} className="text-7xl font-extrabold text-amber-400 leading-none">
+    <div ref={ref} className="text-7xl font-extrabold text-brand-400 leading-none">
       {value.toFixed(1)}
     </div>
   );

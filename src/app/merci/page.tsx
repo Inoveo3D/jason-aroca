@@ -34,7 +34,7 @@ export default function MerciPage() {
           </Link>
           <a
             href="tel:+33698127982"
-            className="inline-block border-2 border-amber-500 text-amber-600 hover:bg-amber-500 hover:text-white font-semibold px-6 py-3 rounded-xl transition-all"
+            className="inline-block border-2 border-brand-500 text-brand-600 hover:bg-brand-500 hover:text-white font-semibold px-6 py-3 rounded-xl transition-all"
           >
             Appeler Jason
           </a>

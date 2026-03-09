@@ -30,7 +30,7 @@ export default function MentionsLegalesPage() {
             <div className="grid grid-cols-1 sm:grid-cols-3 gap-1">
               <dt className="font-semibold text-gray-800">Téléphone</dt>
               <dd className="sm:col-span-2">
-                <a href="tel:+33698127982" className="hover:text-amber-500 transition-colors">06 98 12 79 82</a>
+                <a href="tel:+33698127982" className="hover:text-brand-500 transition-colors">06 98 12 79 82</a>
               </dd>
             </div>
             <div className="grid grid-cols-1 sm:grid-cols-3 gap-1">

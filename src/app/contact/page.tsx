@@ -2,27 +2,28 @@ import type { Metadata } from "next";
 import ContactForm from "@/components/ContactForm";
 
 export const metadata: Metadata = {
-  title: "Contact & Devis Gratuit Électricien Marignane — + élect | Jason Aroca",
+  title: "Contact & Devis Gratuit — Électricité & Multi-services Marignane | + élect Jason Aroca",
   description:
-    "Contactez + élect pour un devis gratuit sous 24h. Électricien Jason Aroca intervient à Marignane (13700) et dans un rayon de 50 km : Vitrolles, Rognac, Martigues, Aix-en-Provence, Marseille, Istres, Salon-de-Provence. Urgences 5j/7 — 06 98 12 79 82.",
+    "Contactez + élect pour un devis gratuit : électricité, placo, fenêtres, portails, volets à Marignane (13700) et dans les alentours. Réponse rapide, urgences 7j/7 — 06 98 12 79 82. Vitrolles, Rognac, Martigues, Aix-en-Provence, Marseille.",
   keywords: [
-    "devis électricien Marignane",
+    "devis artisan Marignane",
     "contact électricien Marignane",
-    "devis gratuit électricien 13700",
+    "devis multi-services Marignane",
+    "devis gratuit artisan 13700",
     "urgence électricien Marignane",
-    "appel électricien Marignane",
     "dépannage électrique urgent Marignane",
-    "06 98 12 79 82 électricien",
+    "devis placo Marignane",
+    "devis fenêtre portail volet Marignane",
+    "06 98 12 79 82",
     "Jason Aroca contact",
     "+ élect contact",
     "électricien Vitrolles devis",
     "électricien Rognac devis",
     "électricien Martigues devis",
-    "électricien Aix-en-Provence devis",
   ],
   openGraph: {
-    title: "Devis Gratuit Électricien Marignane — + élect | Jason Aroca",
-    description: "Demandez votre devis gratuit en ligne ou appelez directement le 06 98 12 79 82. Réponse sous 24h, urgences 5j/7.",
+    title: "Devis Gratuit Électricité & Multi-services Marignane — + élect | Jason Aroca",
+    description: "Demandez votre devis gratuit en ligne ou appelez le 06 98 12 79 82. Électricité, placo, fenêtres, portails et volets. Réponse rapide, urgences 7j/7.",
   },
 };
 
@@ -57,7 +58,7 @@ const infos = [
     title: "Téléphone",
     value: "06 98 12 79 82",
     link: "tel:+33698127982",
-    detail: "Disponible 5j/7 — urgence 24h/24",
+    detail: "Sam/Dim : urgences uniquement",
   },
   {
     Icon: MailIcon,
@@ -76,9 +77,9 @@ const infos = [
   {
     Icon: ClockIcon,
     title: "Horaires",
-    value: "5j/7 — 8h à 20h",
+    value: "Lun–Ven : 7h30 à 18h30",
     link: null,
-    detail: "Urgences : disponible 24h/24",
+    detail: "Sam/Dim : urgences uniquement",
   },
 ];
 
@@ -88,12 +89,12 @@ export default function ContactPage() {
       {/* Hero */}
       <section className="bg-gray-900 text-white pt-32 pb-20">
         <div className="max-w-4xl mx-auto px-4 text-center">
-          <span className="text-amber-400 font-semibold text-sm uppercase tracking-widest">
+          <span className="text-brand-400 font-semibold text-sm uppercase tracking-widest">
             Contact
           </span>
           <h1 className="text-4xl md:text-5xl font-bold mt-3 mb-6">
             Obtenez votre{" "}
-            <span className="text-amber-400">devis gratuit</span>
+            <span className="text-brand-400">devis gratuit</span>
           </h1>
           <p className="text-gray-300 text-lg max-w-2xl mx-auto">
             Remplissez le formulaire ci-dessous ou appelez directement. Je vous réponds
@@ -120,7 +121,7 @@ export default function ContactPage() {
                   {info.link ? (
                     <a
                       href={info.link}
-                      className="font-semibold text-gray-900 hover:text-amber-500 transition-colors"
+                      className="font-semibold text-gray-900 hover:text-brand-500 transition-colors"
                     >
                       {info.value}
                     </a>
@@ -133,14 +134,14 @@ export default function ContactPage() {
             ))}
 
             {/* Urgence */}
-            <div className="bg-amber-500 rounded-2xl p-5 text-white">
+            <div className="bg-brand-500 rounded-2xl p-5 text-white">
               <p className="font-bold text-lg mb-1">Urgence électrique ?</p>
-              <p className="text-amber-100 text-sm mb-3">
+              <p className="text-brand-100 text-sm mb-3">
                 Pas d'électricité, disjoncteur qui saute, odeur de brûlé ? Appelez directement.
               </p>
               <a
                 href="tel:+33698127982"
-                className="inline-flex items-center gap-2 bg-white text-amber-600 font-bold px-6 py-2 rounded-lg hover:bg-amber-50 transition-colors"
+                className="inline-flex items-center gap-2 bg-white text-brand-600 font-bold px-6 py-2 rounded-lg hover:bg-brand-50 transition-colors"
               >
                 <svg className="w-4 h-4" fill="none" stroke="currentColor" strokeWidth={2} viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" d="M2.25 6.75c0 8.284 6.716 15 15 15h2.25a2.25 2.25 0 0 0 2.25-2.25v-1.372c0-.516-.351-.966-.852-1.091l-4.423-1.106c-.44-.11-.902.055-1.173.417l-.97 1.293c-.282.376-.769.542-1.21.38a12.035 12.035 0 0 1-7.143-7.143c-.162-.441.004-.928.38-1.21l1.293-.97c.363-.271.527-.734.417-1.173L6.963 3.102a1.125 1.125 0 0 0-1.091-.852H4.5A2.25 2.25 0 0 0 2.25 4.5v2.25Z" /></svg>
                 Appel d'urgence

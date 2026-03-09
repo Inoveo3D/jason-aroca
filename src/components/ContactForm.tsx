@@ -26,7 +26,7 @@ export default function ContactForm() {
           type="text"
           required
           placeholder="Jean Dupont"
-          className="w-full border border-gray-300 rounded-lg px-4 py-3 focus:outline-none focus:ring-2 focus:ring-amber-400 transition"
+          className="w-full border border-gray-300 rounded-lg px-4 py-3 focus:outline-none focus:ring-2 focus:ring-brand-400 transition"
         />
       </div>
 
@@ -42,7 +42,7 @@ export default function ContactForm() {
             type="email"
             required
             placeholder="jean@email.com"
-            className="w-full border border-gray-300 rounded-lg px-4 py-3 focus:outline-none focus:ring-2 focus:ring-amber-400 transition"
+            className="w-full border border-gray-300 rounded-lg px-4 py-3 focus:outline-none focus:ring-2 focus:ring-brand-400 transition"
           />
         </div>
         <div>
@@ -54,7 +54,7 @@ export default function ContactForm() {
             name="phone"
             type="tel"
             placeholder="06 00 00 00 00"
-            className="w-full border border-gray-300 rounded-lg px-4 py-3 focus:outline-none focus:ring-2 focus:ring-amber-400 transition"
+            className="w-full border border-gray-300 rounded-lg px-4 py-3 focus:outline-none focus:ring-2 focus:ring-brand-400 transition"
           />
         </div>
       </div>
@@ -69,7 +69,7 @@ export default function ContactForm() {
           name="typeService"
           required
           defaultValue=""
-          className="w-full border border-gray-300 rounded-lg px-4 py-3 focus:outline-none focus:ring-2 focus:ring-amber-400 transition bg-white"
+          className="w-full border border-gray-300 rounded-lg px-4 py-3 focus:outline-none focus:ring-2 focus:ring-brand-400 transition bg-white"
         >
           <option value="" disabled>-- Choisir un service --</option>
           <option value="Dépannage d'urgence">Dépannage d&apos;urgence</option>
@@ -93,14 +93,14 @@ export default function ContactForm() {
           required
           rows={5}
           placeholder="Décrivez votre projet ou problème en quelques lignes..."
-          className="w-full border border-gray-300 rounded-lg px-4 py-3 focus:outline-none focus:ring-2 focus:ring-amber-400 transition resize-none"
+          className="w-full border border-gray-300 rounded-lg px-4 py-3 focus:outline-none focus:ring-2 focus:ring-brand-400 transition resize-none"
         />
       </div>
 
       {/* Submit */}
       <button
         type="submit"
-        className="w-full bg-amber-500 hover:bg-amber-600 text-white font-bold text-lg py-4 rounded-xl transition-all hover:scale-[1.02] shadow"
+        className="w-full bg-brand-500 hover:bg-brand-600 text-white font-bold text-lg py-4 rounded-xl transition-all hover:scale-[1.02] shadow"
       >
         Envoyer ma demande
       </button>

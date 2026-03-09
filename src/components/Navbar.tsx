@@ -35,14 +35,14 @@ export default function Navbar() {
             <Link
               key={link.href}
               href={link.href}
-              className="text-gray-700 hover:text-amber-500 font-medium transition-colors"
+              className="text-gray-700 hover:text-brand-500 font-medium transition-colors"
             >
               {link.label}
             </Link>
           ))}
           <Link
             href="/contact"
-            className="bg-amber-500 hover:bg-amber-600 text-white font-semibold px-5 py-2 rounded-lg transition-colors"
+            className="bg-brand-500 hover:bg-brand-600 text-white font-semibold px-5 py-2 rounded-lg transition-colors"
           >
             Devis gratuit
           </Link>
@@ -71,7 +71,7 @@ export default function Navbar() {
             <Link
               key={link.href}
               href={link.href}
-              className="block py-3 text-gray-700 hover:text-amber-500 font-medium border-b border-gray-100"
+              className="block py-3 text-gray-700 hover:text-brand-500 font-medium border-b border-gray-100"
               onClick={() => setOpen(false)}
             >
               {link.label}
@@ -79,7 +79,7 @@ export default function Navbar() {
           ))}
           <Link
             href="/contact"
-            className="block mt-4 text-center bg-amber-500 hover:bg-amber-600 text-white font-semibold px-5 py-3 rounded-lg transition-colors"
+            className="block mt-4 text-center bg-brand-500 hover:bg-brand-600 text-white font-semibold px-5 py-3 rounded-lg transition-colors"
             onClick={() => setOpen(false)}
           >
             Devis gratuit
