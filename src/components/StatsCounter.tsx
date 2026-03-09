@@ -11,7 +11,7 @@ type Stat = {
 const stats: Stat[] = [
   { target: 15, suffix: "+", label: "Années d'expérience" },
   { target: 500, suffix: "+", label: "Clients satisfaits" },
-  { target: 7, suffix: "j/7", label: "Disponibilité" },
+  { target: 5, suffix: "j/7", label: "Disponibilité" },
 ];
 
 function useCountUp(target: number, duration: number, started: boolean) {

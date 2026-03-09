@@ -5,7 +5,7 @@ import type { Metadata } from "next";
 export const metadata: Metadata = {
   title: "À Propos — Jason Aroca Électricien Marignane | Fiabilité & Assurance Décennale",
   description:
-    "Découvrez + élect : Jason Aroca, électricien artisan à Marignane (13700), spécialisé en installation électrique, dépannage et mise aux normes. Assurance décennale, devis gratuit sous 24h, disponible 7j/7 dans un rayon de 50 km — Vitrolles, Rognac, Martigues, Aix-en-Provence, Marseille.",
+    "Découvrez + élect : Jason Aroca, électricien artisan à Marignane (13700), spécialisé en installation électrique, dépannage et mise aux normes. Assurance décennale, devis gratuit sous 24h, disponible 5j/7 dans un rayon de 50 km — Vitrolles, Rognac, Martigues, Aix-en-Provence, Marseille.",
   keywords: [
     "Jason Aroca électricien",
     "+ élect Marignane",
@@ -14,7 +14,7 @@ export const metadata: Metadata = {
     "électricien fiable Marignane",
     "électricien 13700",
     "valeurs électricien Marignane",
-    "électricien disponible 7j/7",
+    "électricien disponible 5j/7",
     "mise aux normes NF C 15-100 Marignane",
     "dépannage électrique Marignane",
     "devis gratuit électricien Marignane",
@@ -85,14 +85,14 @@ export default function AProposPage() {
             <h2 className="text-3xl font-bold text-gray-900 mb-4">À Propos de + élect</h2>
             <p className="text-gray-600 leading-relaxed mb-6">
               + élect est un électricien basé à Marignane, spécialisé dans l'installation électrique,
-              la rénovation, la mise aux normes NF C 15-100 et le dépannage électrique urgent 7j/7.
+              la rénovation, la mise aux normes NF C 15-100 et le dépannage électrique urgent 5j/7.
               J'interviens auprès des particuliers et des professionnels pour des installations sûres,
               durables et conformes aux réglementations. Couvert par une assurance décennale, chaque
               chantier est garanti 10 ans — une protection essentielle pour vous et votre bien.
             </p>
 
             <div className="flex flex-wrap gap-3">
-              {["Artisan local Marignane", "Devis gratuit sous 24h", "Urgences 7j/7", "Assurance décennale"].map((badge) => (
+              {["Artisan local Marignane", "Devis gratuit sous 24h", "Urgences 5j/7", "Assurance décennale"].map((badge) => (
                 <span
                   key={badge}
                   className="bg-amber-50 border border-amber-200 text-amber-700 text-sm font-medium px-3 py-1 rounded-full"

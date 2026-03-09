@@ -6,7 +6,7 @@ import type { Metadata } from "next";
 export const metadata: Metadata = {
   title: "Services Électricien Marignane — Installation, Dépannage, Maintenance | + élect",
   description:
-    "Tous vos travaux électriques à Marignane et dans un rayon de 50 km : installation électrique, dépannage urgence 7j/7, maintenance préventive, conseils personnalisés. Artisan assurance décennale. Devis gratuit. Vitrolles, Rognac, Martigues, Aix-en-Provence, Marseille, Istres, Salon-de-Provence.",
+    "Tous vos travaux électriques à Marignane et dans un rayon de 50 km : installation électrique, dépannage urgence 5j/7, maintenance préventive, conseils personnalisés. Artisan assurance décennale. Devis gratuit. Vitrolles, Rognac, Martigues, Aix-en-Provence, Marseille, Istres, Salon-de-Provence.",
   keywords: [
     "installation électrique Marignane",
     "dépannage électrique urgence Marignane",
@@ -47,6 +47,7 @@ const services = [
       "Câblage et mise en gaine",
       "Prises, interrupteurs, luminaires",
       "Alimentation cuisine, salle de bain",
+      "Couvert par l'assurance décennale",
     ],
   },
   {
@@ -72,14 +73,14 @@ const services = [
     ],
   },
   {
-    img: "/images/services/4-conseils.webp",
-    title: "Conseils Personnalisés",
-    desc: "Recevez des conseils d'experts adaptés à votre situation.",
+    img: "/images/services/4-multi-services.webp",
+    title: "Multi-services & Travaux Annexes",
+    desc: "Au-delà de l'électricité, Jason intervient sur des travaux complémentaires pour vous offrir un service complet.",
     details: [
-      "Audit de votre installation",
-      "Recommandations adaptées à votre budget",
-      "Orientation vers les aides disponibles",
-      "Accompagnement de A à Z",
+      "Pose et finition de plaques de placo",
+      "Petits travaux de second œuvre",
+      "Encastrement et saignées",
+      "Remise en état après travaux électriques",
     ],
   },
 ];
@@ -265,7 +266,7 @@ export default function ServicesPage() {
         <div className="max-w-3xl mx-auto px-4 text-center text-white">
           <h2 className="text-3xl font-bold mb-4">Un projet ? Parlons-en.</h2>
           <p className="text-gray-300 mb-8">
-            Devis gratuit et sans engagement sous 24h. Je vous réponds rapidement.
+            Devis gratuit et sans engagement. Je vous réponds rapidement.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Link

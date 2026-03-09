@@ -7,11 +7,11 @@ import RatingCounter from "@/components/RatingCounter";
 export const metadata: Metadata = {
   title: "Électricien Marignane — Dépannage & Installation | + élect Jason Aroca",
   description:
-    "+ élect, votre électricien à Marignane (13700) : dépannage électrique 7j/7, installation, mise aux normes, tableau électrique. Artisan assurance décennale. Devis gratuit sous 24h. Intervient à Vitrolles, Rognac, Martigues, Aix-en-Provence, Marseille et alentours.",
+    "+ élect, votre électricien à Marignane (13700) : dépannage électrique 5j/7, installation, mise aux normes, tableau électrique. Artisan assurance décennale. Devis gratuit sous 24h. Intervient à Vitrolles, Rognac, Martigues, Aix-en-Provence, Marseille et alentours.",
   keywords: [
     "électricien Marignane",
     "dépannage électrique Marignane",
-    "électricien 7j/7 Marignane",
+    "électricien 5j/7 Marignane",
     "installation électrique Marignane",
     "tableau électrique Marignane",
     "électricien urgence Marignane",
@@ -47,9 +47,9 @@ const services = [
     desc: "Assurez le bon fonctionnement de vos installations électriques.",
   },
   {
-    img: "/images/services/4-conseils.webp",
-    title: "Conseils Personnalisés",
-    desc: "Recevez des conseils d'experts adaptés à votre situation.",
+    img: "/images/services/4-multi-services.webp",
+    title: "Multi-services & Travaux Annexes",
+    desc: "Pose de placo, second œuvre et travaux complémentaires pour un service clé en main.",
   },
 ];
 
@@ -87,7 +87,7 @@ export default function HomePage() {
 
           <h1 className="text-4xl md:text-6xl font-bold leading-tight mb-6">
             Votre électricien de confiance,{" "}
-            <span className="text-amber-400">disponible 7j/7</span>
+            <span className="text-amber-400">disponible 5j/7</span>
           </h1>
 
           <p className="text-lg md:text-xl text-gray-300 max-w-2xl mx-auto mb-10">
@@ -113,7 +113,7 @@ export default function HomePage() {
           </div>
 
           <p className="mt-6 text-amber-400 font-semibold animate-pulse">
-            Urgence électrique ? Réponse en moins de 2h !
+            Urgence électrique ? Intervention dès que possible !
           </p>
         </div>
 
@@ -207,7 +207,7 @@ export default function HomePage() {
               avec des solutions adaptées à votre budget.
             </p>
             <ul className="space-y-2 mb-8">
-              {["Devis gratuit sous 24h", "Garantie décennale", "Travail soigné et propre", "Tarifs transparents"].map((item) => (
+              {["Devis gratuit", "Garantie décennale (installations)", "Travail soigné et propre", "Tarifs transparents"].map((item) => (
                 <li key={item} className="flex items-center gap-2 text-gray-700">
                   <span className="text-amber-500 font-bold">✓</span> {item}
                 </li>
@@ -275,8 +275,8 @@ export default function HomePage() {
             Besoin d'un électricien à Marignane ?
           </h2>
           <p className="text-gray-300 text-lg mb-8">
-            Contactez-nous maintenant et obtenez un devis gratuit sous 24h.
-            Intervention rapide à Marignane et alentours, 7 jours sur 7.
+            Contactez-nous maintenant et obtenez un devis gratuit.
+            Intervention rapide à Marignane et alentours, du lundi au vendredi.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Link

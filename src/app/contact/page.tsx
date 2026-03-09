@@ -4,7 +4,7 @@ import ContactForm from "@/components/ContactForm";
 export const metadata: Metadata = {
   title: "Contact & Devis Gratuit Électricien Marignane — + élect | Jason Aroca",
   description:
-    "Contactez + élect pour un devis gratuit sous 24h. Électricien Jason Aroca intervient à Marignane (13700) et dans un rayon de 50 km : Vitrolles, Rognac, Martigues, Aix-en-Provence, Marseille, Istres, Salon-de-Provence. Urgences 7j/7 — 06 98 12 79 82.",
+    "Contactez + élect pour un devis gratuit sous 24h. Électricien Jason Aroca intervient à Marignane (13700) et dans un rayon de 50 km : Vitrolles, Rognac, Martigues, Aix-en-Provence, Marseille, Istres, Salon-de-Provence. Urgences 5j/7 — 06 98 12 79 82.",
   keywords: [
     "devis électricien Marignane",
     "contact électricien Marignane",
@@ -22,7 +22,7 @@ export const metadata: Metadata = {
   ],
   openGraph: {
     title: "Devis Gratuit Électricien Marignane — + élect | Jason Aroca",
-    description: "Demandez votre devis gratuit en ligne ou appelez directement le 06 98 12 79 82. Réponse sous 24h, urgences 7j/7.",
+    description: "Demandez votre devis gratuit en ligne ou appelez directement le 06 98 12 79 82. Réponse sous 24h, urgences 5j/7.",
   },
 };
 
@@ -57,7 +57,7 @@ const infos = [
     title: "Téléphone",
     value: "06 98 12 79 82",
     link: "tel:+33698127982",
-    detail: "Disponible 7j/7 — urgence 24h/24",
+    detail: "Disponible 5j/7 — urgence 24h/24",
   },
   {
     Icon: MailIcon,
@@ -76,7 +76,7 @@ const infos = [
   {
     Icon: ClockIcon,
     title: "Horaires",
-    value: "7j/7 — 8h à 20h",
+    value: "5j/7 — 8h à 20h",
     link: null,
     detail: "Urgences : disponible 24h/24",
   },
