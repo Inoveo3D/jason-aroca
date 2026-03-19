@@ -86,10 +86,10 @@ export default function AProposPage() {
           <div>
             <h2 className="text-3xl font-bold text-gray-900 mb-4">À Propos de + élect</h2>
             <p className="text-gray-600 leading-relaxed mb-6">
-              + élect est un artisan basé à Marignane, spécialisé dans l'installation électrique,
+              +élect est une entreprise basée à Marignane, spécialisée dans l'installation électrique,
               la rénovation, la mise aux normes NF C 15-100 et le dépannage électrique 7j/7 (urgence uniquement le week-end).
-              Au-delà de l'électricité, j'interviens également sur des travaux multi-services : pose de placo, remplacement de fenêtres,
-              portails, volets et petits travaux de second œuvre — pour un service clé en main.
+              Au-delà de l'électricité, l'entreprise intervient également sur des travaux multi-services : pose de placo, remplacement de fenêtres,
+              portails, volets et petits travaux de second œuvre, pour un service clé en main.
               Tous les travaux électriques sont couverts par une assurance décennale.
             </p>
 
